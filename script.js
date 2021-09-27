@@ -73,15 +73,18 @@ for(let i = 0; i < eventsArr.length; i++){
 
 console.table(eventsCorrelation)
 
-//Function to find the event with the maximum correlation in the eventsCorrelation object
-let getMaxNumber = function(object){
-    let maxValue = 0;
-    for(let key in object){
-        if(maxValue < object[key]){
-            maxValue = key
+setTimeout(() => {
+    //Function to find the event with the maximum correlation in the eventsCorrelation object
+    let getMaxNumber = function(object){
+        let maxValue = 0;
+        for(let key in object){
+            if(maxValue < object[key]){
+                maxValue = key
+            }
         }
+        return `Therefore, the event with the highest chance of causing him to turn into a werewolf would be ${maxValue}.`
     }
-    return `Therefore, the event with the highest chance of causing him to turn into a werewolf is ${maxValue}.`
-}
 
-console.log(getMaxNumber(eventsCorrelation))
+    console.log(getMaxNumber(eventsCorrelation))
+}, 1500)
+
