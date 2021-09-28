@@ -23,8 +23,6 @@ addEntry(['sight-seeing', 'anger', 'sunlight', 'cinema', 'cocktail'], true);
 addEntry(['headache', 'anger', 'moonlight', 'hunting', 'ice-cream'], true);
 addEntry(['anger', 'moonlight', 'stress', 'hunting', 'suya'], true);
 
-// console.log(log.length)
-
 //Function to generate a frequency table from each of the events, the output from this function would be used to calculate the correlation of each event with Ace's transformation
 function frequencyTable(event, log){
     let tableArr = [0, 0, 0, 0];
